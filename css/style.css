@@ -10,28 +10,49 @@ body {
   margin: auto;
 }
 
+
+
 /* NAVBAR */
 .navbar-home {
-  background: rgba(31, 56, 20, 0.7);
-  padding: 15px 0;
+  background: rgba(16, 59, 57, 0.781);
   position: fixed;
   width: 100%;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
+
+/* Contenedor interno para centrar contenido */
+.navbar-home .container {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+  align-items: center; /* 👈 centra verticalmente todo */
+  padding: 0 40px;
+  height: 80px; /* misma altura que el logo */
+}
+
+/* Logo */
 .navbar-home .logo img {
   height: 80px;
 }
+
+/* Menú */
 .menu {
   list-style: none;
   display: flex;
-  gap: 20px;
-  float: right;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
+
 .menu li a {
   color: #c9a818e5;
   text-decoration: double;
-  font-weight: initial;
+  font-weight: bolder;
+  font-size: medium;
 }
+
+
 
 /* Slider */
 .slider {
@@ -145,6 +166,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   position: relative;
+  text-align: justify;
 }
 
 .nosotros-desc h2::after {
@@ -205,7 +227,7 @@ body {
 }
 
 
-/* SECCIÓN SERVICIOS MINIMALISTA SIN CÍRCULOS */
+/* SECCIÓN SERVICIOS */
 .section-servicios-minimal {
   padding: 100px 20px;
   text-align: center;
