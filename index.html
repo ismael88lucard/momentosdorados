@@ -32,20 +32,28 @@
 </head>
 
 <body>
-  <!-- ✅ NAVBAR -->
-  <nav class="navbar-home">
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="./images/logo.png" alt="Mis Años Dorados mi Esperanza">
-      </a>
-      <ul class="menu">
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+<nav class="navbar-home">
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="./images/logo.png" alt="Mis Años Dorados mi Esperanza">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
+
+    <ul class="menu" id="menu">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- ✅ SLIDER PRINCIPAL -->
   <section class="slider">
@@ -293,6 +301,13 @@
       gallery.addEventListener("mouseleave", startAutoPlay);
     });
   </script>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 
 </body>
 
