@@ -22,13 +22,13 @@ body {
   left: 0;
 }
 
-/* Contenedor interno para centrar contenido */
+/* Contenedor */
 .navbar-home .container {
   display: flex;
-  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
-  align-items: center; /* 👈 centra verticalmente todo */
+  justify-content: space-between;
+  align-items: center;
   padding: 0 40px;
-  height: 80px; /* misma altura que el logo */
+  height: 80px;
 }
 
 /* Logo */
@@ -43,6 +43,7 @@ body {
   gap: 40px;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
 }
 
 .menu li a {
@@ -51,6 +52,52 @@ body {
   font-weight: bolder;
   font-size: medium;
 }
+
+/* 🔽 Ícono hamburguesa (solo visible en móvil) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 28px;
+  height: 3px;
+  background: #c9a818e5;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-home .container {
+    padding: 0 20px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgba(16, 59, 57, 0.95);
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .menu.active {
+    max-height: 300px; /* altura al abrir */
+    padding: 20px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 
 
 
