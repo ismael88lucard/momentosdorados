@@ -719,3 +719,26 @@ footer {
     object-position: center center; /* vuelve al centro en móviles */
   }
 }
+
+/* 🔹 Ajuste general para todos los videos del slider */
+.slider .slide video.slide-bg {
+  object-fit: cover; /* mantiene la cobertura en pantallas grandes */
+  object-position: center center;
+}
+
+/* 🔹 Ajuste para móviles */
+@media (max-width: 768px) {
+  .slider .slide video.slide-bg {
+    object-fit: contain; /* asegura que todo el video se vea en móviles */
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+  }
+
+  /* Overlay centrado un poco más arriba si se ve muy abajo */
+  .slider .slide .overlay {
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+  }
+}
