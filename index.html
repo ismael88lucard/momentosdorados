@@ -16,8 +16,8 @@
   <meta name="twitter:title" content="Mis Años Dorados mi Esperanza">
   <meta name="twitter:description" content="Atención integral y humana para adultos mayores en Portoviejo, Manabí.">
 
-<!-- Favicon básico -->
-<link rel="icon" type="image/png" href="logo.png">
+  <!-- Favicon básico -->
+  <link rel="icon" type="image/png" href="logo.png">
 
   <!-- Fuentes y librerías -->
   <link rel="stylesheet"
@@ -32,44 +32,70 @@
 </head>
 
 <body>
-<nav class="navbar-home">
-  <div class="container">
-    <a href="#" class="logo">
-      <img src="./images/logo.png" alt="Mis Años Dorados mi Esperanza">
-    </a>
+  <nav class="navbar-home">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./images/logo.png" alt="Mis Años Dorados mi Esperanza">
+      </a>
 
-    <!-- Botón hamburguesa -->
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+      <!-- Botón hamburguesa -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="menu" id="menu">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </div>
-
-    <ul class="menu" id="menu">
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
 
   <!-- ✅ SLIDER PRINCIPAL -->
   <section class="slider">
+    <!-- Slide 1: Video -->
     <div class="slide active" id="slide-video">
       <video autoplay muted loop playsinline class="slide-bg">
-        <source src="videos/vid8.mov" type="video/mp4">
+        <source src="videos/vid8.MOV" type="video/mp4">
       </video>
       <div class="overlay">
         <h1 data-aos="fade-up">Bienvenidos a Mis Años Dorados</h1>
         <p data-aos="fade-up" data-aos-delay="200">Un hogar lleno de respeto, amor y compañía</p>
       </div>
     </div>
-    <div class="slide" id="slide-img">
-      <img src="images/IMG_8.png" alt="Imagen principal" class="slide-bg">
+
+    <!-- ✅ Slide 2: Nuevo video en lugar de imagen -->
+    <div class="slide" id="slide-video-2">
+      <video autoplay muted loop playsinline class="slide-bg">
+        <source src="videos/vid10.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <h1 data-aos="fade-up">Nuestro Compromiso</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Brindar bienestar todos los días</p>
+      </div>
+    </div>
+
+    <!-- Slide 3: Otro video -->
+    <div class="slide" id="slide-video-3">
+      <video autoplay muted loop playsinline class="slide-bg">
+        <source src="videos/vid16.mp4" type="video/mp4">
+      </video>
+      <div class="overlay">
+        <h1 data-aos="fade-up">Nuestro Gran Equipo</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Profesionales con vocación, entregando cada día cuidado, respeto y amor.
+        </p>
+
+
+      </div>
     </div>
   </section>
+
+
 
   <!-- ✅ SECCIÓN NOSOTROS MODERNA Y MINIMALISTA -->
   <section id="nosotros" class="section-nosotros" data-aos="fade-up">
@@ -109,50 +135,50 @@
   </section>
 
 
-<!-- ✅ SECCIÓN SERVICIOS MINIMALISTA -->
-<section id="servicios" class="section-servicios-minimal" data-aos="fade-up">
-  <div class="container">
-    <h2>Nuestros Servicios</h2>
-    <div class="services-grid">
+  <!-- ✅ SECCIÓN SERVICIOS MINIMALISTA -->
+  <section id="servicios" class="section-servicios-minimal" data-aos="fade-up">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
 
-      <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
-        <div class="service-icon">
-          <img src="icons/centro-medico.png" alt="Atención médica">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-icon">
+            <img src="icons/centro-medico.png" alt="Atención médica">
+          </div>
+          <h3>Atención médica 24/7</h3>
         </div>
-        <h3>Atención médica 24/7</h3>
-      </div>
 
-      <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
-        <div class="service-icon">
-          <img src="icons/alimentacion-saludable.png" alt="Alimentación saludable">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-icon">
+            <img src="icons/alimentacion-saludable.png" alt="Alimentación saludable">
+          </div>
+          <h3>Alimentación saludable</h3>
         </div>
-        <h3>Alimentación saludable</h3>
-      </div>
 
-      <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
-        <div class="service-icon">
-          <img src="icons/terapia-fisica.png" alt="Terapias físicas">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-icon">
+            <img src="icons/terapia-fisica.png" alt="Terapias físicas">
+          </div>
+          <h3>Terapias físicas y ocupacionales</h3>
         </div>
-        <h3>Terapias físicas y ocupacionales</h3>
-      </div>
 
-      <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
-        <div class="service-icon">
-          <img src="icons/actividades-culturales.png" alt="Actividades recreativas">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon">
+            <img src="icons/actividades-culturales.png" alt="Actividades recreativas">
+          </div>
+          <h3>Actividades recreativas y culturales</h3>
         </div>
-        <h3>Actividades recreativas y culturales</h3>
-      </div>
 
-      <div class="service-item" data-aos="zoom-in" data-aos-delay="500">
-        <div class="service-icon">
-          <img src="icons/bienestar-espiritual.png" alt="Acompañamiento emocional">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-icon">
+            <img src="icons/bienestar-espiritual.png" alt="Acompañamiento emocional">
+          </div>
+          <h3>Acompañamiento espiritual y emocional</h3>
         </div>
-        <h3>Acompañamiento espiritual y emocional</h3>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -177,7 +203,7 @@
             <div class="gallery-item horizontal"><img src="images/IMG_3.png" alt=""></div>
           </div>
           <div class="gallery-item vertical">
-            <video src="videos/vid4.mov" autoplay muted loop playsinline></video>
+            <video src="videos/vid4.mp4" autoplay muted loop playsinline></video>
           </div>
         </div>
 
@@ -188,7 +214,7 @@
             <div class="gallery-item horizontal"><img src="images/IMG_5.png" alt=""></div>
           </div>
           <div class="gallery-item vertical">
-            <video src="videos/vid6.mov" autoplay muted loop playsinline></video>
+            <video src="videos/vid6.mp4" autoplay muted loop playsinline></video>
           </div>
         </div>
 
@@ -199,7 +225,7 @@
             <div class="gallery-item horizontal"><img src="images/IMG_7.png" alt=""></div>
           </div>
           <div class="gallery-item vertical">
-            <video src="videos/vid7.mov" autoplay muted loop playsinline></video>
+            <video src="videos/vid7.mp4" autoplay muted loop playsinline></video>
           </div>
         </div>
 
@@ -210,34 +236,35 @@
             <div class="gallery-item horizontal"><img src="images/IMG_9.jpg" alt=""></div>
           </div>
           <div class="gallery-item vertical">
-            <video src="videos/vid9.mov" autoplay muted loop playsinline></video>
+            <video src="videos/vid9.mp4" autoplay muted loop playsinline></video>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-<!-- ✅ CONTACTO ELEGANTE -->
-<section id="contacto" class="section-contacto" data-aos="fade-up">
-  <div class="container-contacto">
-    <h2>Contáctanos</h2>
+  <!-- ✅ CONTACTO ELEGANTE -->
+  <section id="contacto" class="section-contacto" data-aos="fade-up">
+    <div class="container-contacto">
+      <h2>Contáctanos</h2>
 
-    <div class="contacto-grid">
-      <div class="contacto-info" data-aos="fade-right">
-        <p><i class="fas fa-map-marker-alt"></i> Av. José María Urbina, vía Crucita kilómetro medio diagonal a farmacia Fybeca <br>Portoviejo - Manabí</p>
-        <p><i class="fas fa-phone"></i> 0985170250</p>
-        <p><i class="fas fa-envelope"></i> geriatricomisanosdorados@gmail.com</p>
-      </div>
+      <div class="contacto-grid">
+        <div class="contacto-info" data-aos="fade-right">
+          <p><i class="fas fa-map-marker-alt"></i> Av. José María Urbina, vía Crucita kilómetro medio diagonal a
+            farmacia Fybeca <br>Portoviejo - Manabí</p>
+          <p><i class="fas fa-phone"></i> 0985170250</p>
+          <p><i class="fas fa-envelope"></i> geriatricomisanosdorados@gmail.com</p>
+        </div>
 
-      <div class="contacto-mapa" data-aos="fade-up">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.336071746469!2d-80.47390401363373!3d-1.0344718094675593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902bed177b6b8a2f%3A0x94e191035a56b41e!2sGeri%C3%A1trico%20Mis%20A%C3%B1os%20Dorados%20%22Mi%20Esperanza%22!5e0!3m2!1ses-419!2sec!4v1760059446049!5m2!1ses-419!2sec"
-          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+        <div class="contacto-mapa" data-aos="fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.336071746469!2d-80.47390401363373!3d-1.0344718094675593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902bed177b6b8a2f%3A0x94e191035a56b41e!2sGeri%C3%A1trico%20Mis%20A%C3%B1os%20Dorados%20%22Mi%20Esperanza%22!5e0!3m2!1ses-419!2sec!4v1760059446049!5m2!1ses-419!2sec"
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -261,7 +288,12 @@
 
   <!-- ✅ SLIDER PRINCIPAL -->
   <script>
-    let slides = [document.getElementById("slide-video"), document.getElementById("slide-img")];
+    // Selecciona todos los slides disponibles
+    let slides = [
+      document.getElementById("slide-video"),
+      document.getElementById("slide-video-2"),
+      document.getElementById("slide-video-3")
+    ];
     let current1 = 0;
     setInterval(() => {
       slides[current1].classList.remove("active");
@@ -269,6 +301,7 @@
       slides[current1].classList.add("active");
     }, 5000);
   </script>
+
 
   <!-- ✅ GALERÍA AUTOMÁTICA (3 elementos por grupo) -->
   <script>
@@ -301,13 +334,13 @@
       gallery.addEventListener("mouseleave", startAutoPlay);
     });
   </script>
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
-</script>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
 
 </body>
 
