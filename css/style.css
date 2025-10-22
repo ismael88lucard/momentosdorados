@@ -708,3 +708,14 @@ footer {
   color: #f26807;
   transform: scale(1.1);
 }
+
+/* 🔹 Ajuste solo para el video del slide 2 */
+#slide-video-2 .slide-bg {
+  object-position: 50% 30%; /* centra y sube un poco la vista */
+}
+
+@media (max-width: 768px) {
+  #slide-video-2 .slide-bg {
+    object-position: center center; /* vuelve al centro en móviles */
+  }
+}
