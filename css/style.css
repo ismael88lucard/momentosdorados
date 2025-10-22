@@ -742,3 +742,10 @@ footer {
     right: 5%;
   }
 }
+@media (max-width: 768px) {
+  #slide-video-3 .slide-bg {
+    object-fit: cover;        /* ocupa toda la pantalla */
+    object-position: center;  /* centra el video */
+    height: 100vh;            /* fuerza la altura completa del viewport */
+  }
+}
