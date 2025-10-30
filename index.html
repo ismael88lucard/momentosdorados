@@ -199,66 +199,119 @@
 
 
 
+ <!-- 🔹 GALERIA  -->
 
+<section id="galeria" class="section-galeria moderna">
+  <div class="container">
+    <div class="gallery-header">
+      <h2>Nuestra Familia</h2>
+      <p>Momentos de convivencia, amor y alegría en nuestro hogar.</p>
+    </div>
 
-
-
-
-  <!-- ✅ GALERÍA AUTOMÁTICA DE 3 ELEMENTOS -->
-  <section id="galeria" class="section-content-general">
-    <div class="container">
-      <div class="gallery-text">
-        <h2>Nuestra Familia</h2>
-        <p>Momentos especiales de convivencia y alegría en nuestro hogar.</p>
+    <div class="gallery-grid">
+      <!-- 🔹 Imágenes -->
+      <div class="gallery-item">
+        <img src="images/IMG_2.png" alt="Imagen 2">
       </div>
 
-      <div class="enhanced-gallery">
-        <!-- Grupo 1 -->
-        <div class="gallery-group active">
-          <div class="gallery-column horizontal-images">
-            <div class="gallery-item horizontal"><img src="images/IMG_2.png" alt=""></div>
-            <div class="gallery-item horizontal"><img src="images/IMG_3.png" alt=""></div>
-          </div>
-          <div class="gallery-item vertical">
-            <video src="videos/vid4.mp4" autoplay muted loop playsinline></video>
-          </div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/IMG_3.png" alt="Imagen 3">
+      </div>
 
-        <!-- Grupo 2 -->
-        <div class="gallery-group">
-          <div class="gallery-column horizontal-images">
-            <div class="gallery-item horizontal"><img src="images/IMG_4.png" alt=""></div>
-            <div class="gallery-item horizontal"><img src="images/IMG_5.png" alt=""></div>
-          </div>
-          <div class="gallery-item vertical">
-            <video src="videos/vid6.mp4" autoplay muted loop playsinline></video>
-          </div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/IMG_4.png" alt="Imagen 4">
+      </div>
 
-        <!-- Grupo 3 -->
-        <div class="gallery-group">
-          <div class="gallery-column horizontal-images">
-            <div class="gallery-item horizontal"><img src="images/IMG_6.png" alt=""></div>
-            <div class="gallery-item horizontal"><img src="images/IMG_7.png" alt=""></div>
-          </div>
-          <div class="gallery-item vertical">
-            <video src="videos/vid7.mp4" autoplay muted loop playsinline></video>
-          </div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/IMG_5.png" alt="Imagen 5">
+      </div>
 
-        <!-- Grupo 4 -->
-        <div class="gallery-group">
-          <div class="gallery-column horizontal-images">
-            <div class="gallery-item horizontal"><img src="images/IMG_8.png" alt=""></div>
-            <div class="gallery-item horizontal"><img src="images/IMG_9.jpg" alt=""></div>
-          </div>
-          <div class="gallery-item vertical">
-            <video src="videos/vid9.mp4" autoplay muted loop playsinline></video>
-          </div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/IMG_6.png" alt="Imagen 6">
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/IMG_7.png" alt="Imagen 7">
+      </div>
+
+       <div class="gallery-item">
+        <img src="images/repaso.jpg" alt="Imagen 7">
+      </div>
+
+      <!-- 🔹 Videos -->
+      <div class="gallery-item video">
+        <video src="videos/abrazo.mp4" muted loop playsinline></video>
+      </div>
+
+     <div class="gallery-item">
+        <img src="images/duo.jpg" alt="Imagen 7">
+      </div>
+
+      <div class="gallery-item video">
+        <video src="videos/vid10.mp4" muted loop playsinline></video>
+      </div>
+       <div class="gallery-item video">
+        <video src="videos/vid9.mp4" muted loop playsinline></video>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- 🔹 Lightbox para imágenes y videos -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <video id="lightbox-video" controls></video>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ✅ SECCIÓN HISTORIAS QUE INSPIRAN -->
+<section id="historias" class="section-historias" data-aos="fade-up">
+  <div class="container">
+    <h2>Historias que Inspiran</h2>
+    <p>Voces reales que reflejan nuestro compromiso y cariño diario.</p>
+
+    <div class="historias-grid">
+
+      <!-- 🎥 Entrevista 1 -->
+      <div class="historia">
+        <div class="thumbnail" data-video="videos/ent1.mov">
+          <img src="images/miniatura1.jpg" alt="Entrevista Don Luis">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+        </div>
+        <h3>Don Walter Zamora</h3>
+        <p>“Volver a hablar de mi pasión me llena de energía cada día.”</p>
+      </div>
+
+      <!-- 🎥 Entrevista 2 -->
+      <div class="historia">
+        <div class="thumbnail" data-video="videos/ent2.mp4">
+          <img src="images/miniatura2.jpg" alt="Entrevista María Fernanda">
+          <div class="play-icon"><i class="fas fa-play"></i></div>
+        </div>
+        <h3> Cuidadora</h3>
+        <p>“Aquí tratamos a cada residente con el cariño que se merece.”</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ MODAL DE VIDEO -->
+<div id="videoModal" class="video-modal">
+  <div class="video-content">
+    <span class="close">&times;</span>
+    <video id="modalVideo" controls playsinline></video>
+  </div>
+</div>
+
+
+
+
 
   <!-- ✅ CONTACTO ELEGANTE -->
   <section id="contacto" class="section-contacto" data-aos="fade-up">
@@ -299,65 +352,130 @@
     </div>
   </footer>
 
-  <!-- ✅ JS LIBRERÍAS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+ <!-- ✅ JS LIBRERÍAS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-  <!-- ✅ SLIDER PRINCIPAL -->
-  <script>
-    // Selecciona todos los slides disponibles
-    let slides = [
-      document.getElementById("slide-video"),
-      document.getElementById("slide-video-2"),
-      document.getElementById("slide-video-3")
-    ];
-    let current1 = 0;
-    setInterval(() => {
-      slides[current1].classList.remove("active");
-      current1 = (current1 + 1) % slides.length;
-      slides[current1].classList.add("active");
-    }, 5000);
-  </script>
+<!-- ✅ SLIDER PRINCIPAL -->
+<script>
+(() => {
+  const slides = document.querySelectorAll(".slide");
+  const durations = [6000, 3000, 4000]; // duraciones en ms
+  let current = 0;
+  let timeoutId;
 
-
-  <!-- ✅ GALERÍA AUTOMÁTICA (3 elementos por grupo) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const groups = document.querySelectorAll(".gallery-group");
-      let current = 0;
-      let autoInterval;
-
-      // Activar primer grupo
-      groups[current].classList.add("active");
-
-      function changeGroup(dir = 1) {
-        groups[current].classList.remove("active");
-        current = (current + dir + groups.length) % groups.length;
-        groups[current].classList.add("active");
-      }
-
-      function startAutoPlay() {
-        autoInterval = setInterval(() => changeGroup(1), 4000);
-      }
-
-      function stopAutoPlay() {
-        clearInterval(autoInterval);
-      }
-
-      startAutoPlay();
-
-      const gallery = document.querySelector(".enhanced-gallery");
-      gallery.addEventListener("mouseenter", stopAutoPlay);
-      gallery.addEventListener("mouseleave", startAutoPlay);
+  function showSlide(index) {
+    slides.forEach((slide) => {
+      const vid = slide.querySelector("video");
+      vid.pause();
+      vid.currentTime = 0;
+      slide.classList.remove("active");
     });
-  </script>
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
+
+    const currentSlide = slides[index];
+    const currentVideo = currentSlide.querySelector("video");
+    currentSlide.classList.add("active");
+    currentVideo.play();
+
+    current = (index + 1) % slides.length;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => showSlide(current), durations[index]);
+  }
+
+  showSlide(0);
+})();
+</script>
+
+<!-- ✅ GALERÍA LIGHTBOX -->
+<script>
+(() => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxVideo = document.getElementById("lightbox-video");
+  const closeBtn = document.querySelector(".lightbox .close");
+
+  document.querySelectorAll(".gallery-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      const img = item.querySelector("img");
+      const vid = item.querySelector("video");
+
+      if (img) {
+        lightboxImg.src = img.src;
+        lightboxImg.style.display = "block";
+        lightboxVideo.style.display = "none";
+      } else if (vid) {
+        lightboxVideo.src = vid.currentSrc || vid.src;
+        lightboxVideo.style.display = "block";
+        lightboxImg.style.display = "none";
+      }
+
+      lightbox.style.display = "flex";
     });
-  </script>
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxVideo.pause();
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+      lightboxVideo.pause();
+    }
+  });
+})();
+</script>
+
+<!-- ✅ MODAL DE VIDEO -->
+<script>
+(() => {
+  const thumbnails = document.querySelectorAll(".thumbnail");
+  const modal = document.getElementById("videoModal");
+  const modalVideo = document.getElementById("modalVideo");
+  const closeModalBtn = document.querySelector("#videoModal .close");
+
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      const videoSrc = thumb.getAttribute("data-video");
+      modalVideo.src = videoSrc;
+      modal.style.display = "flex";
+      modalVideo.play();
+    });
+  });
+
+  closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalVideo.pause();
+    modalVideo.src = "";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      modalVideo.pause();
+      modalVideo.src = "";
+    }
+  });
+})();
+</script>
+
+<script>
+  // Selecciona todos los videos dentro de la galería
+  const galleryVideos = document.querySelectorAll('.gallery-item video');
+
+  galleryVideos.forEach(video => {
+    video.muted = true;      // asegura que esté muteado
+    video.volume = 0;        // volumen a 0
+    video.play().catch(err => {
+      // Esto evita errores de autoplay
+      console.log('Autoplay bloqueado:', err);
+    });
+  });
+</script>
+
 
 </body>
 
