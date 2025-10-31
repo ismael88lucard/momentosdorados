@@ -451,6 +451,29 @@
   });
 </script>
 
+<script>
+  // === Menú hamburguesa ===
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    const menuLinks = document.querySelectorAll('#menu a');
+
+    // Abrir/cerrar menú al hacer clic en el icono
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        menuToggle.classList.remove('open');
+      });
+    });
+  });
+</script>
+
 
 
 </body>
